@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="clac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Calculator</title>
+</head>
+<body>
+    <div class="button">
+        <button id="standard">Standard</button>
+        <button id="scientific">Scientific</button>
+    </div>
+    <div class="calc">
+        <form name="clac">
+            <input name="textview" type="textview"  class="screen" disabled >
+            <input name="textview1" type="textview" placeholder="0" class="screen1" disabled>
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" class="bn" value="C" id="delete" ></td>
+                <td><input type="button" style=" font-size: 16px;" class="bn" value="Del" id="sup"></td>
+                <td><input type="button" class="bn" value="√" onclick="document.clac.textview.value = Math.sqrt(document.clac.textview.value)"></td>
+                <td><input type="button" class="bn" value="/" id="sur"></td>
+                <td><input type="button" class="bn fa" value="cos" id="cos"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="bn" value="7" id="7"></td>
+                <td><input type="button" class="bn" value="8" id="8"></td>
+                <td><input type="button" class="bn" value="9" id="9"></td>
+                <td><input type="button" class="bn" value="X" id="moins"></td>
+                <td><input type="button" class="bn fa" value="sin" id="sin"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="bn" value="4" id="4"></td>
+                <td><input type="button" class="bn" value="5" id="5"></td>
+                <td><input type="button" class="bn" value="6" id="6"></td>
+                <td><input type="button" class="bn" value="-" id="mins"></td>
+                <td><input type="button" class="bn fa" value="tan" id="tan"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="bn" value="1" id="1"></td>
+                <td><input type="button" class="bn" value="2" id="2"></td>
+                <td><input type="button" class="bn" value="3" id="3"></td>
+                <td rowspan="2"><input type="button" style="height: 115px;" class="bn" value="+" id="plus"></td>
+                <td><input type="button" class="bn fa" value="x²" id="x"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="bn" value="0" id="0"></td>
+                <td><input type="button" class="bn" value="." id="dot"></td>
+                <td><input type="button" class="bn" value="=" id="sum"></td>
+                <td><input type="button" class="bn fa" value="1/x" id="surr"></td>
+            </tr>
+        </table>
+    </div> 
+    <p>Created by Abderrezak</p>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
